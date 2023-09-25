@@ -23,12 +23,12 @@ function Header(props: Props) {
 
     const showShadow = shadow ? 'shadow' : '';
     const headerClass = scrolled ? 'scrolled' : showShadow;
-    const logoLightTextClass = scrolled ? '' : 'light-text';
+    // const logoLightTextClass = scrolled ? '' : 'light-text';
     const logoClass = scrolled ? 'logo scrolled-logo' : 'logo';
 
     return (
         <header className={headerClass}>
-            <Link className={logoClass} to='/'>KatyCodesStuff<span className={logoLightTextClass}>Blog</span></Link>
+            <Link className={logoClass} to='/'>Alex Cosmas</Link>
             <button onClick={async (event) => {
                 const randomArticle = await new RandomArticle().getRandomArticle();
                 navigate(`/article/${randomArticle.slug}`)
