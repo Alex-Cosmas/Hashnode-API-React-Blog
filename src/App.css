@@ -1,0 +1,118 @@
+:root {
+  --brand-color: #F29559;
+  --dark-color: #202C39;
+  --mid-color: #283845;
+  --light-color: #FFFFFF;
+  --grey-color: #e6e6e6;
+  --text-font: 'Mukta', sans-serif;
+  --header-font: 'Dancing Script', cursive;
+  --logo-font: 'Comforter', cursive;
+
+  background-color: var(--light-color);
+}
+
+body {
+  margin: 0;
+  font-family: var(--text-font);
+  color: var(--dark-color);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+  font-size: smaller;
+}
+
+h1 {
+  font-family: var(--header-font);
+  font-size: 200%;
+}
+
+h2 {
+  font-family: var(--header-font);
+  font-size: 180%;
+}
+
+h3 {
+  font-family: var(--header-font);
+  font-size: 150%;
+}
+
+.section-border {
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-color: var(--grey-color);
+  padding: 5px 0px;
+}
+
+.cursive {
+  font-family: 'Dancing Script', cursive;
+}
+
+
+.loading {
+  color: var(--dark-color);
+}
+
+.small-text {
+  font-size: smaller;
+}
+
+.right-align-text {
+  text-align: right;
+}
+
+.centered-div {
+  position: relative;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  width: 150px;
+  height: 150px;
+  text-align: center;
+  padding: 20px;
+}
+
+button {
+  height: 50px;
+  padding: 10px;
+  margin: 15px;
+  font-family: var(--text-font);
+  color: var(--light-color);
+  background-color: var(--mid-color);
+  border-radius: 20px;
+  border-width: 0px;
+  transition: 0.5s ease;
+}
+
+button:hover {
+  -webkit-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  transform: scale(1.05);
+  transition: 0.5s ease;
+  cursor: pointer;
+}
+
+button:active {
+  background-color: var(--dark-color);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+a {
+  color: var(--light-color);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: var(--brand-color);
+}
