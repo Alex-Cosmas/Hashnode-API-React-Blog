@@ -5,7 +5,7 @@ import MainPage from "../components/MainPage/MainPage";
 function HomePage() {
   return (
     <>
-      <div className="w-full h-screen flex flex-cols text-center">
+      <div className="bg-gray-100">
         <Header shadow={false} />
         <LandingPage />
         <MainPage />
