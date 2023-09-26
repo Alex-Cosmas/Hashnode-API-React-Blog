@@ -9,7 +9,7 @@ function BlogGrid(props: Props): any {
   const { articles } = props;
 
   return (
-    <div className="blog-grid bg-slate-50 p-5 rounded-sm ">
+    <div className="blog-grid  space-y-4">
       {articles.map((article: ArticleSummary, i: number) => (
         <BlogSummary key={i} article={article} />
       ))}

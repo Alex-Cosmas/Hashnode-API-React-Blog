@@ -13,14 +13,16 @@ function BlogSummary(props: Props) {
   const navigate = useNavigate();
 
   return (
-    <div
-      className="box"
-      onClick={() => {
-        navigate(`/article/${slug}`);
-      }}
-    >
-      <h3>{title}</h3>
-      <p>{brief}</p>
+    <div>
+      <div
+        className="px-4 py-0.5 rounded-sm bg-slate-50 cursor-pointer"
+        onClick={() => {
+          navigate(`/article/${slug}`);
+        }}
+      >
+        <h3>{title}</h3>
+        <p>{brief}</p>
+      </div>
 
       {/* <div className='info-grid small-text'>
                 <span className='info-item'>❤ {totalReactions}</span>
