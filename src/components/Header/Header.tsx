@@ -8,7 +8,7 @@ interface Props {
 }
 
 function Header(props: Props) {
-  const { shadow } = props;
+  // const { shadow } = props;
   const [scrolled, setScrolled] = useState<boolean>(false);
   const navigate = useNavigate();
 
@@ -25,8 +25,8 @@ function Header(props: Props) {
     };
   }, [scrolled]);
 
-  const showShadow = shadow ? "shadow-md" : "";
-  const headerClass = scrolled ? "scrolled" : showShadow;
+  // const showShadow = shadow ? "shadow-md" : "";
+  // const headerClass = scrolled ? "scrolled" : showShadow;
   // // const logoLightTextClass = scrolled ? '' : 'light-text';
   // const logoClass = scrolled ? "logo scrolled-logo" : "logo";
 

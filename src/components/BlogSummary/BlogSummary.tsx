@@ -8,7 +8,8 @@ interface Props {
 }
 
 function BlogSummary(props: Props) {
-  const { title, brief, slug, dateAdded, totalReactions } = props.article;
+  // const { title, brief, slug, dateAdded, totalReactions } = props.article;
+  const { title, brief, slug } = props.article;
   const navigate = useNavigate();
 
   return (

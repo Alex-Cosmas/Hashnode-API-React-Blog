@@ -24,7 +24,8 @@ function MainPage() {
       <div className="">
         <div className="main-page">
           <h2 className="heading">
-            I'm Alex Cosmas, a Product Designer/Developer from Nairobi, Kenya.
+            I'm Alex Cosmas, <br />
+            Product Designer/Developer from Nairobi, Kenya.
           </h2>
 
           <p className="text">
@@ -34,10 +35,10 @@ function MainPage() {
           </p>
 
           <p className="text">
-            I'm a curious individual always seeking to expand my horizons and
-            not one to limit myself to just Design and Development. Currently,
-            deep in with Elixir and Functional Programming and enjoying every
-            minute of it.
+            As a curious individual always seeking to expand my horizons and not
+            one to limit myself to just Design and Development. Currently, deep
+            in with Elixir and Functional Programming and enjoying every minute
+            of it.
           </p>
 
           <p className="text">
