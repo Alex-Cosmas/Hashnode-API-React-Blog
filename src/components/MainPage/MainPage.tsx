@@ -22,40 +22,21 @@ function MainPage() {
   return (
     <>
       <div className="">
-        <div className="main-page">
-          <h2 className="heading">
-            I'm Alex Cosmas, <br />
-            Product Designer/Developer from Nairobi, Kenya.
-          </h2>
-
-          <p className="text">
-            I am currently the Lead Product Designer at Simple Formations, where
-            I'm spearheading the development of a Corporate Legal Entity and
-            Compliance Management solution.
-          </p>
-
-          <p className="text">
-            As a curious individual always seeking to expand my horizons and not
-            one to limit myself to just Design and Development. Currently, deep
-            in with Elixir and Functional Programming and enjoying every minute
-            of it.
-          </p>
-
-          <p className="text">
-            In addition to my personal growth, I also enjoy mentoring and
-            teaching newcomers to the field.
-          </p>
-          <p className="text">
-            You can connect with me on Twitter, GitHub, or Email to stay updated
-            on my journey and insights.
-          </p>
-        </div>
-      </div>
-      <div className="main-page">
-        <h2 className="heading">Latest articles</h2>
+        <h2 className="heading">Articles</h2>
+        <p>Written a couple of articles — some more noteworthy than others.</p>
       </div>
       {loading ? (
-        <div className="centered-div loading">Loading blog posts...</div>
+        <div className="centered-div loading">
+          <div role="status" className="max-w-sm animate-pulse">
+            <div className="h-2.5 bg-gray-200 rounded-full dark:bg-gray-700 w-48 mb-4"></div>
+            <div className="h-2 bg-gray-200 rounded-full dark:bg-gray-700 max-w-[360px] mb-2.5"></div>
+            <div className="h-2 bg-gray-200 rounded-full dark:bg-gray-700 mb-2.5"></div>
+            <div className="h-2 bg-gray-200 rounded-full dark:bg-gray-700 max-w-[330px] mb-2.5"></div>
+            <div className="h-2 bg-gray-200 rounded-full dark:bg-gray-700 max-w-[300px] mb-2.5"></div>
+            <div className="h-2 bg-gray-200 rounded-full dark:bg-gray-700 max-w-[360px]"></div>
+            <span className="sr-only">Loading...</span>
+          </div>
+        </div>
       ) : (
         <BlogGrid articles={articles} />
       )}
